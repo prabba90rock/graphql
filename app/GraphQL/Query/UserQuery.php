@@ -15,7 +15,8 @@ class UserQuery extends Query
 
     public function type()
     {
-        return Type::listOf(GraphQL::type('User'));
+        return GraphQL::type('User');
+
     }
 
     public function args()
@@ -23,7 +24,6 @@ class UserQuery extends Query
         return [
             'id' => ['name' => 'id', 'type' => Type::int()],
             'email' => ['name' => 'email', 'type' => Type::string()],
-            'first' => ['name' => 'first', 'type' => Type::int()],
         ];
     }
 

@@ -1,0 +1,185 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-05-11T12:20:21.602Z",
+	"__export_source": "insomnia.desktop.app:v5.16.1",
+	"resources": [
+		{
+			"_id": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"created": 1526020114348,
+			"description": "",
+			"modified": 1526041122991,
+			"name": "GraphQL",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_7f2022ee57eb4745bfa64bcd35a1ae35",
+			"color": null,
+			"created": 1526020114390,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1526020114390,
+			"name": "New Environment",
+			"parentId": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_f8c2ee4f1453467eb7da5d8aa4dda381",
+			"cookies": [],
+			"created": 1526020114474,
+			"modified": 1526020114474,
+			"name": "Default Jar",
+			"parentId": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_e069a0b9a06a46cead624dc8fa89de94",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1526022154030,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_dbfd4b95ae67467ea07ac2bd43937a5c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1526022154031,
+			"method": "GET",
+			"modified": 1526039524090,
+			"name": "Get Users",
+			"parameters": [
+				{
+					"id": "pair_0acee2fd10954dcc8caca67f0e4f9721",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8000/graphql?query={user(id:1){id,email}}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3ad8707c7ccd4b96b66da2491a891924",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1526039530480,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_dbfd4b95ae67467ea07ac2bd43937a5c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1526022153981,
+			"method": "GET",
+			"modified": 1526039573942,
+			"name": "Get User By Email or ID",
+			"parameters": [
+				{
+					"id": "pair_0acee2fd10954dcc8caca67f0e4f9721",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8000/graphql?query={user(email:\"mayoosuf@gmail.com\"){id,email}}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_194bb57abf3c42d583b66bfd32e7b420",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1526040932009,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_dbfd4b95ae67467ea07ac2bd43937a5c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1526022153931,
+			"method": "GET",
+			"modified": 1526040984141,
+			"name": "Update User",
+			"parameters": [
+				{
+					"id": "pair_0acee2fd10954dcc8caca67f0e4f9721",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8000/graphql?query=mutation{updateUser(id:1,%20email:%22mayoosuf@gmail.com%22,password:%22worldisbulshit%22){id,%20email,created_at,updated_at,profile{id,full_name}}}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_471f4280462f4bbb9246571c2d1a49d4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1526040992253,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_dbfd4b95ae67467ea07ac2bd43937a5c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1526022153881,
+			"method": "GET",
+			"modified": 1526041059082,
+			"name": "Create User",
+			"parameters": [
+				{
+					"id": "pair_0acee2fd10954dcc8caca67f0e4f9721",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "wrk_7d16c00ba0f844be896e9e8837154873",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8000/graphql?query=mutation{createUser(email:\"saman@gmail.com\",password:\"worldisbulshi\"){id,email,created_at,updated_at,profile{id,full_name}}}",
+			"_type": "request"
+		}
+	]
+}

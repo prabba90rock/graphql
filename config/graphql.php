@@ -128,6 +128,8 @@ return [
                 'user' => App\GraphQL\Query\UserQuery::class,
             ],
             'mutation' => [
+                'createUser' => App\GraphQL\Mutation\User\CreateUserMutation::class,
+                'updateUser' => App\GraphQL\Mutation\User\UpdateUserMutation::class,
 
             ]
         ]
